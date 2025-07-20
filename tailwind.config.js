@@ -1,21 +1,15 @@
+// tailwind.config.js
 /** @type {import('tailwindcss').Config} */
-export default {
-  darkMode: ['class'], // or 'media' or custom if you want
+module.exports = {
   content: [
-    './components/**/*.{vue,js,ts}',
-    './layouts/**/*.vue',
-    './pages/**/*.vue',
-    './app.vue',
-    './plugins/**/*.{js,ts}',
-    './composables/**/*.{js,ts}',
-  ],
+  './components/**/*.{vue,js,ts}',
+  './layouts/**/*.{vue,js,ts}',
+  './pages/**/*.{vue,js,ts}',
+  './app.vue',
+]
+,
   theme: {
-    extend: {
-      colors: {
-        primary: '#6366f1',
-        secondary: '#8b5cf6',
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }
